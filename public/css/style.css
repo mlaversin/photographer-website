@@ -112,16 +112,16 @@ header nav li {
 }
 
 
-/* ----- Hero Section ----- */
+/* ----- Home Section ----- */
 
-.hero {
+#home {
     position: relative;
     justify-content: center;
     min-height: 100vh;
     color: #fff;
     text-align: center;
 }
-.hero .background-image {
+#home .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,35 +131,35 @@ header nav li {
     background-color: #2196F3;
     z-index: -1;
 }
-.hero h1 {
+#home h1 {
     font: bold 60px 'Open Sans', sans-serif;
     margin-bottom: 15px;
 }
-.hero h3 {
+#home h3 {
     font: normal 28px 'Open Sans', sans-serif;
     margin-bottom: 40px;
 }
-.hero a.btn  {
+#home a.btn  {
     padding: 20px 46px;
 }
 @media (max-width: 768px) {
-    .hero {
+    #home {
         min-height: 600px;
     }
-    .hero h1 {
+    #home h1 {
         font-size: 48px;
     }
-    .hero h3 {
+    #home h3 {
         font-size: 24px;
     }
-    .hero a.btn {
+    #home a.btn {
         padding: 15px 40px;
     }
 }
 
-/* ----- Work Section ----- */
+/* ----- Gallery Section ----- */
 
-.work .grid li {
+.gallery .grid li {
     padding: 20px;
     height: 350px;
     border-radius: 3px;
@@ -168,15 +168,15 @@ header nav li {
     background-position: center;
     background-color: #333;
 }
-.work .grid li.small {
+.gallery .grid li.small {
     flex-basis: 40%
 }
-.work .grid li.large {
+.gallery .grid li.large {
     flex-basis: 60%
 }
 @media (max-width: 992px) {
-    .work .grid li.small,
-    .work .grid li.large {
+    .gallery .grid li.small,
+    .gallery .grid li.large {
         flex-basis: 100%
     }
 }
@@ -250,3 +250,31 @@ header nav li {
 
 /* ----- Contact Section ----- */
 
+.contact {
+    background-color: #f7f7f7;
+}
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 80%;
+}
+.contact form input {
+    padding: 15px;
+    flex: 1;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #555;
+    border: solid 1px #ddd;
+}
+.contact form .btn {
+    padding: 13px 36px;
+}
+@media (max-width: 768px) {
+    .contact form input {
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+    }
+}
