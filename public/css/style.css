@@ -45,6 +45,26 @@ section {
         padding: 80px 30px;
     }
 }
+section h3.title {
+    color: #414a4f;
+    text-transform: capitalize;
+    font: bold 32px 'Open Sans', sans-serif;
+    margin-bottom: 35px;
+    text-align: center;
+}
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+ul.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 
 /* ----- Header ----- */
@@ -95,7 +115,6 @@ header nav li {
     text-align: center;
 }
 .hero .background-image {
-    background-image: url(/public/img/hero.jpg);
     position: absolute;
     top: 0;
     left: 0;
@@ -128,5 +147,29 @@ header nav li {
     }
     .hero a.btn {
         padding: 15px 40px;
+    }
+}
+
+/* ----- Section work ----- */
+
+.work .grid li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+.work .grid li.small {
+    flex-basis: 40%
+}
+.work .grid li.large {
+    flex-basis: 60%
+}
+@media (max-width: 992px) {
+    .work .grid li.small,
+    .work .grid li.large {
+        flex-basis: 100%
     }
 }
