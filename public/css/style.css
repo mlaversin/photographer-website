@@ -112,7 +112,7 @@ header nav li {
 }
 
 
-/* ----- Section hero ----- */
+/* ----- Hero Section ----- */
 
 .hero {
     position: relative;
@@ -157,7 +157,7 @@ header nav li {
     }
 }
 
-/* ----- Section work ----- */
+/* ----- Work Section ----- */
 
 .work .grid li {
     padding: 20px;
@@ -182,7 +182,7 @@ header nav li {
 }
 
 
-/* ----- Section features ----- */
+/* ----- Features Section ----- */
 
 .features {
     background-color: #f7f7f7;
@@ -219,3 +219,34 @@ header nav li {
         flex-basis: 100%;
     }
 }
+
+/* ----- Reviews Section ----- */
+
+.reviews .quote {
+    text-align: center;
+    width: 80%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.reviews .author {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.reviews .author:last-child {
+    margin-bottom: 0;
+}
+@media (max-width: 992px) {
+    .reviews .quote {
+        font-size: 20px;
+    }
+    .reviews .author {
+        font-size: 16px;
+    }
+}
+
+
+/* ----- Contact Section ----- */
+
