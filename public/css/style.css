@@ -21,7 +21,30 @@ a {
 a:hover {
     opacity: 1;
 }
-
+a.btn {
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color:#2196F3;
+    font-weight: 800;
+    text-align: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 100px;
+}
+@media (max-width: 992px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+@media (max-width: 768px) {
+    section {
+        padding: 80px 30px;
+    }
+}
 
 
 /* ----- Header ----- */
@@ -35,7 +58,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: #fff;
     padding: 35px 100px 0;
 }
 header h2 {
@@ -58,5 +81,52 @@ header nav li {
     }
     header h2 {
         margin-bottom: 15px;
+    }
+}
+
+
+/* ----- Section hero ----- */
+
+.hero {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+.hero .background-image {
+    background-image: url(/public/img/hero.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #2196F3;
+    z-index: -1;
+}
+.hero h1 {
+    font: bold 60px 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+.hero h3 {
+    font: normal 28px 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+.hero a.btn  {
+    padding: 20px 46px;
+}
+@media (max-width: 768px) {
+    .hero {
+        min-height: 600px;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+    .hero h3 {
+        font-size: 24px;
+    }
+    .hero a.btn {
+        padding: 15px 40px;
     }
 }
