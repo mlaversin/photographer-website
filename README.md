@@ -1,4 +1,4 @@
 # photographer-website
-A responsive website template for photographers | HTML CSS JS
+A responsive website template for photographers using HTML, CSS and Vanilla JS.
 
-[Live demo]{https://mlaversin.github.io/photographer-website/}
+[Live demo](https://mlaversin.github.io/photographer-website/)
